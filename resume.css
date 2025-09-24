@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+    margin: 0;
+    font-family: Arial;
+}
+
+.head-sec {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.head-sec h1 {
+    font-family: monospace;
+    color: rgb(45, 43, 43);
+    margin-bottom: 15px;
+    font-size: 3.5rem;
+
+}
+
+.head-sec p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    word-spacing: 3px;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+/* Style tab links */
+.btn-animation {
+    transition: all 1000ms;
+    position: relative;
+    overflow: hidden;
+}
+
+.tablink {
+    cursor: pointer;
+    padding: 12px 14px;
+    font-size: 17px;
+    width: 15%;
+    box-shadow: 4px 5px 17px -4px #646667;
+    color: white;
+    background-color: #065ab5;
+}
+
+.btn-animation:hover {
+    color: #065ab5;
+    transform: scale(1.1);
+}
+
+.btn-animation::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.btn-animation:hover::before {
+    width: 200%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    display: none;
+    padding: 20px 20px;
+    width: 100%;
+}
+
+/* ---------RESUME PREVIEW SECTION----------- */
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 30px;
+}
+
+.sidebar {
+    background: #054e9d;
+    color: white;
+    width: 45%;
+    padding: 30px 20px;
+    border-top-left-radius: 30px;
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar p,
+.sidebar li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-content {
+    width: 55%;
+    padding: 30px;
+}
+
+.resume-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.resume-header h2 {
+    margin: 5px 0 15px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #777;
+}
+
+.contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    background: #2e3a59;
+    color: white;
+    padding: 10px;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.resume-section {
+    margin-top: 20px;
+}
+
+.resume-section h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience {
+    margin-bottom: 15px;
+}
+
+.experience h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.experience .company {
+    font-size: 14px;
+    color: #555;
+}
+
+.experience .date {
+    float: right;
+    color: #999;
+    font-size: 13px;
+}
+
+.references {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* -------------------------- */
